@@ -21,6 +21,8 @@ describe('Verify Give a hot flow', () => {
             user.company, user.address1, user.address2, user.city, user.state,
             user.zip)
         donationsRegisterTablePage.verifyEmailAdressIsDisplayed(user.email);
+        donationsRegisterTablePage.clickNavigationTab('Your Table');
+        donationsRegisterTablePage.verifyUserInformationIsDisplayed(user.firstName, user.lastName, user.email);
     })
 
 })
